@@ -1,1 +1,1 @@
-*.xml  diff=xscript
+addon/scripts/*.xml  diff=xscript
