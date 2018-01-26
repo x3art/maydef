@@ -83,7 +83,7 @@ then the go button in normal MLCC. Except that the last order is always
 
 ### Why do ships jump in to some gate far away from the enemy? ###
 
-Because they either jump to the center of the sector if you haev QJE
+Because they either jump to the center of the sector if you have QJE
 or its nearest gate if you don't. It's pretty useless to jump to the
 nearest gate to the enemy because pretty much by definition they'll be
 heading away from it. If the enemy is fast enough the defender ships
@@ -97,3 +97,4 @@ We don't withdraw ships once the threat goes down. We probably should,
 but there are risks with doing that (like if the threat drops because
 a carrier docks its fighters and then relaunches those fighters we
 could end up oscilating).
+
