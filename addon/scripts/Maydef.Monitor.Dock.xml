@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Maydef.Monitor.Dock</name>
-	<version>270</version>
+	<version>273</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments />
@@ -2043,7 +2043,7 @@
 			<text> </text>
 			<var>[Find.Enemy]</var>
 		</line>
-		<line linenr="219" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="219" indent="&#160;&#160;&#160;">
 			<var>$EnemyShips</var>
 			<text> </text>
 			<text>=</text>
@@ -2099,15 +2099,15 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="220" indent="&#160;&#160;&#160;&#160;" />
-		<line linenr="221" indent="&#160;&#160;&#160;&#160;">
+		<line linenr="220" indent="&#160;&#160;&#160;" />
+		<line linenr="221" indent="&#160;&#160;&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="222" indent="&#160;&#160;&#160;">
+		<line linenr="222" indent="&#160;&#160;&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -2120,14 +2120,14 @@
 			<text> </text>
 			<var>$EnemyShips</var>
 		</line>
-		<line linenr="223" indent="&#160;&#160;">
+		<line linenr="223" indent="&#160;&#160;&#160;&#160;">
 			<var>$AnyThreats</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="224" indent="&#160;&#160;">
+		<line linenr="224" indent="&#160;&#160;&#160;&#160;">
 			<var>$XS.Iterator7</var>
 			<text> </text>
 			<text>=</text>
@@ -2140,17 +2140,17 @@
 			<text> </text>
 			<var>$EnemyShips</var>
 		</line>
-		<line linenr="225" indent="&#160;">
+		<line linenr="225" indent="&#160;&#160;&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator7</var>
 		</line>
-		<line linenr="226" indent="">
+		<line linenr="226" indent="&#160;&#160;&#160;&#160;&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator7</var>
 		</line>
-		<line linenr="227" indent="">
+		<line linenr="227" indent="&#160;&#160;&#160;&#160;&#160;">
 			<var>$ship</var>
 			<text> </text>
 			<text>=</text>
@@ -2160,7 +2160,7 @@
 			<var>$XS.Iterator7</var>
 			<text>]</text>
 		</line>
-		<line linenr="228" indent="">
+		<line linenr="228" indent="&#160;&#160;&#160;&#160;&#160;">
 			<var>$class</var>
 			<text> </text>
 			<text>=</text>
@@ -2174,7 +2174,7 @@
 			<text> </text>
 			<text>class</text>
 		</line>
-		<line linenr="229" indent="">
+		<line linenr="229" indent="&#160;&#160;&#160;&#160;">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
@@ -2191,12 +2191,12 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="230" indent="&#160;">
+		<line linenr="230" indent="&#160;&#160;&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$t</var>
 		</line>
-		<line linenr="231" indent="&#160;">
+		<line linenr="231" indent="&#160;&#160;&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -2207,10 +2207,10 @@
 			<text> </text>
 			<var>$t</var>
 		</line>
-		<line linenr="232" indent="&#160;">
+		<line linenr="232" indent="&#160;&#160;">
 			<text>else</text>
 		</line>
-		<line linenr="233" indent="&#160;">
+		<line linenr="233" indent="&#160;&#160;">
 			<var>$LogEntry</var>
 			<text> </text>
 			<text>=</text>
@@ -2243,13 +2243,13 @@
 			<var>Log</var>
 			<text>:</text>
 		</line>
-		<line linenr="235" indent="&#160;&#160;">
+		<line linenr="235" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="236" indent="&#160;&#160;">
+		<line linenr="236" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="237" indent="&#160;&#160;">
+		<line linenr="237" indent="">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -2266,7 +2266,7 @@
 			<text> </text>
 			<var>$threat</var>
 		</line>
-		<line linenr="238" indent="&#160;&#160;" />
+		<line linenr="238" indent="" />
 		<line linenr="239" indent="&#160;">
 			<var>$threat</var>
 			<text> </text>
@@ -2274,7 +2274,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="240" indent="">
+		<line linenr="240" indent="&#160;">
 			<var>$myShips</var>
 			<text> </text>
 			<text>=</text>
@@ -2295,7 +2295,7 @@
 			<text> </text>
 			<text>sector</text>
 		</line>
-		<line linenr="241" indent="">
+		<line linenr="241" indent="&#160;">
 			<var>$XS.Iterator8</var>
 			<text> </text>
 			<text>=</text>
@@ -2308,17 +2308,17 @@
 			<text> </text>
 			<var>$myShips</var>
 		</line>
-		<line linenr="242" indent="">
+		<line linenr="242" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator8</var>
 		</line>
-		<line linenr="243" indent="">
+		<line linenr="243" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator8</var>
 		</line>
-		<line linenr="244" indent="">
+		<line linenr="244" indent="&#160;&#160;">
 			<var>$ship</var>
 			<text> </text>
 			<text>=</text>
@@ -2328,9 +2328,11 @@
 			<var>$XS.Iterator8</var>
 			<text>]</text>
 		</line>
-		<line linenr="245" indent="">
-			<text>if</text>
-			<text>  </text>
+		<line linenr="245" indent="&#160;&#160;">
+			<var>$defending</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
 			<var>$ship</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -2350,7 +2352,51 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="246" indent="">
+		<line linenr="246" indent="&#160;&#160;">
+			<var>$home</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text>get</text>
+			<text> </text>
+			<text>homebase</text>
+		</line>
+		<line linenr="247" indent="&#160;&#160;">
+			<var>$homedefending</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$home</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>is</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>Maydef.Cmd.Defend.Sector</call>
+			<text> </text>
+			<text>on</text>
+			<text> </text>
+			<text>stack</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>task</text>
+			<text>=</text>
+			<var>0</var>
+		</line>
+		<line linenr="248" indent="&#160;">
+			<text>if</text>
+			<text>  </text>
+			<var>$defending</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$homedefending</var>
+		</line>
+		<line linenr="249" indent="">
 			<var>$class</var>
 			<text> </text>
 			<text>=</text>
@@ -2364,7 +2410,7 @@
 			<text> </text>
 			<text>class</text>
 		</line>
-		<line linenr="247" indent="">
+		<line linenr="250" indent="">
 			<var>$t</var>
 			<text> </text>
 			<text>=</text>
@@ -2381,7 +2427,104 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="248" indent="">
+		<line linenr="251" indent="">
+			<var>$fighters</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text>get</text>
+			<text> </text>
+			<text>ship</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<text>from</text>
+			<text> </text>
+			<text>sector</text>
+			<text>/</text>
+			<text>ship</text>
+			<text>/</text>
+			<text>station</text>
+		</line>
+		<line linenr="252" indent="">
+			<var>$XS.Iterator9</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>size</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<text>array</text>
+			<text> </text>
+			<var>$fighters</var>
+		</line>
+		<line linenr="253" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$XS.Iterator9</var>
+		</line>
+		<line linenr="254" indent="">
+			<text>dec</text>
+			<text> </text>
+			<var>$XS.Iterator9</var>
+		</line>
+		<line linenr="255" indent="">
+			<var>$fighter</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$fighters</var>
+			<text>[</text>
+			<var>$XS.Iterator9</var>
+			<text>]</text>
+		</line>
+		<line linenr="256" indent="">
+			<var>$fc</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$fighter</var>
+			<text>-&gt;</text>
+			<text>get</text>
+			<text> </text>
+			<text>object</text>
+			<text> </text>
+			<text>class</text>
+		</line>
+		<line linenr="257" indent="">
+			<var>$ft</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>table</text>
+			<text> </text>
+			<text>get</text>
+			<text> </text>
+			<var>$ShipThreats</var>
+			<text> </text>
+			<text>(</text>
+			<text> </text>
+			<var>$fc</var>
+			<text>)</text>
+		</line>
+		<line linenr="258" indent="">
+			<var>$t</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>$t</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>$ft</var>
+		</line>
+		<line linenr="259" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="260" indent="">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -2392,13 +2535,13 @@
 			<text> </text>
 			<var>$t</var>
 		</line>
-		<line linenr="249" indent="">
+		<line linenr="261" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="250" indent="">
+		<line linenr="262" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="251" indent="">
+		<line linenr="263" indent="">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -2415,21 +2558,21 @@
 			<text> </text>
 			<var>$threat</var>
 		</line>
-		<line linenr="252" indent="">
+		<line linenr="264" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="253" indent="">
+		<line linenr="265" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="254" indent="" />
-		<line linenr="255" indent="">
+		<line linenr="266" indent="" />
+		<line linenr="267" indent="">
 			<comment>* $LogEntry</comment>
 		</line>
-		<line linenr="256" indent="">
+		<line linenr="268" indent="">
 			<var>Log</var>
 			<text>:</text>
 		</line>
-		<line linenr="257" indent="">
+		<line linenr="269" indent="">
 			<var>$LogEntry</var>
 			<text> </text>
 			<text>=</text>
@@ -2456,7 +2599,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="258" indent="">
+		<line linenr="270" indent="">
 			<text>write</text>
 			<text> </text>
 			<text>to</text>
@@ -2475,7 +2618,7 @@
 			<text>=</text>
 			<var>$LogEntry</var>
 		</line>
-		<line linenr="259" indent="">
+		<line linenr="271" indent="">
 			<text>append</text>
 			<text> </text>
 			<var>$LogEntry</var>
@@ -2486,7 +2629,7 @@
 			<text> </text>
 			<var>$Log</var>
 		</line>
-		<line linenr="260" indent="">
+		<line linenr="272" indent="">
 			<var>$sz</var>
 			<text> </text>
 			<text>=</text>
@@ -2499,7 +2642,7 @@
 			<text> </text>
 			<var>$Log</var>
 		</line>
-		<line linenr="261" indent="">
+		<line linenr="273" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$sz</var>
@@ -2508,7 +2651,7 @@
 			<text> </text>
 			<var>200</var>
 		</line>
-		<line linenr="262" indent="">
+		<line linenr="274" indent="">
 			<var>$newLog</var>
 			<text> </text>
 			<text>=</text>
@@ -2522,7 +2665,7 @@
 			<text>=</text>
 			<var>100</var>
 		</line>
-		<line linenr="263" indent="">
+		<line linenr="275" indent="">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -2539,7 +2682,7 @@
 			<text> </text>
 			<var>$newLog</var>
 		</line>
-		<line linenr="264" indent="">
+		<line linenr="276" indent="">
 			<text>copy</text>
 			<text> </text>
 			<text>array</text>
@@ -2566,29 +2709,29 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="265" indent="">
+		<line linenr="277" indent="">
 			<var>$Log</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$newLog</var>
 		</line>
-		<line linenr="266" indent="">
+		<line linenr="278" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="267" indent="">
+		<line linenr="279" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="268" indent="" />
+		<line linenr="280" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="Maydef.Monitor.Dock" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="270" />
+			<sval type="int" val="273" />
 			<sval type="int" val="0" />
-			<sval type="array" size="53">
+			<sval type="array" size="57">
 				<sval type="string" val="stateVersion" />
 				<sval type="string" val="tick" />
 				<sval type="string" val="tickTime" />
@@ -2640,10 +2783,14 @@
 				<sval type="string" val="XS.Iterator7" />
 				<sval type="string" val="myShips" />
 				<sval type="string" val="XS.Iterator8" />
+				<sval type="string" val="defending" />
+				<sval type="string" val="home" />
+				<sval type="string" val="homedefending" />
+				<sval type="string" val="XS.Iterator9" />
 				<sval type="string" val="sz" />
 				<sval type="string" val="newLog" />
 			</sval>
-			<sval type="array" size="212">
+			<sval type="array" size="224">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="0" />
@@ -2955,7 +3102,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -3091,7 +3238,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="706" />
@@ -3180,7 +3327,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
@@ -3218,7 +3365,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -3645,7 +3792,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -3694,7 +3841,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -3792,7 +3939,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="1712" />
@@ -3934,7 +4081,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610561527" />
+					<sval type="int" val="-1610558455" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="44" />
@@ -4089,7 +4236,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="201" />
+					<sval type="int" val="213" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -4127,7 +4274,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610562039" />
+					<sval type="int" val="-1610558967" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="50" />
@@ -4150,10 +4297,40 @@
 					<sval type="int" val="1072" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="26" />
-					<sval type="int" val="-1610562301" />
+					<sval type="int" val="51" />
 					<sval type="string" val="Maydef.Cmd.Defend.Sector" />
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="704" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="26" />
+					<sval type="int" val="52" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="1072" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="52" />
+					<sval type="int" val="53" />
+					<sval type="string" val="Maydef.Cmd.Defend.Sector" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610559229" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="51" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="53" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="700" />
@@ -4168,6 +4345,72 @@
 					<sval type="int" val="10" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="31" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="1008" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="26" />
+					<sval type="int" val="33" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="131" />
+					<sval type="int" val="54" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="33" />
+				</sval>
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610559479" />
+					<sval type="int" val="1" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="54" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="143" />
+					<sval type="int" val="54" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="129" />
+					<sval type="int" val="34" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="33" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="54" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="700" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="34" />
+					<sval type="int" val="36" />
+				</sval>
+				<sval type="array" size="6">
+					<sval type="int" val="1709" />
+					<sval type="int" val="37" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="10" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="36" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="32" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="32" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="37" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="201" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
@@ -4242,16 +4485,16 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="131" />
-					<sval type="int" val="51" />
+					<sval type="int" val="55" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="7" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610558717" />
+					<sval type="int" val="-1610555645" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="51" />
+					<sval type="int" val="55" />
 					<sval type="int" val="4" />
 					<sval type="int" val="200" />
 					<sval type="int" val="15" />
@@ -4263,7 +4506,7 @@
 				</sval>
 				<sval type="array" size="4">
 					<sval type="int" val="128" />
-					<sval type="int" val="52" />
+					<sval type="int" val="56" />
 					<sval type="int" val="4" />
 					<sval type="int" val="100" />
 				</sval>
@@ -4274,12 +4517,12 @@
 					<sval type="int" val="5" />
 					<sval type="string" val="Log" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="52" />
+					<sval type="int" val="56" />
 				</sval>
 				<sval type="array" size="11">
 					<sval type="int" val="133" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="52" />
+					<sval type="int" val="56" />
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="131074" />
@@ -4294,7 +4537,7 @@
 					<sval type="int" val="7" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="52" />
+					<sval type="int" val="56" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -4303,7 +4546,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="75">
+			<sval type="array" size="76">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
 					<sval type="int" val="2" />
@@ -4582,32 +4825,36 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="197" />
+					<sval type="int" val="208" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="198" />
+					<sval type="int" val="209" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="200" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="201" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="201" />
-					<sval type="int" val="1" />
-					<sval type="string" val="$LogEntry" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="211" />
+					<sval type="int" val="210" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="212" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="213" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="213" />
+					<sval type="int" val="1" />
+					<sval type="string" val="$LogEntry" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="223" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="224" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
