@@ -98,6 +98,21 @@ but there are risks with doing that (like if the threat drops because
 a carrier docks its fighters and then relaunches those fighters we
 could end up oscilating).
 
+### MLCC carrier fighter script changes ###
+
+This includes a fixed script for fighters. The changes in there have
+to do how we handle ship classes that don't have configuration options
+in the MLCC carrier configuration (only M1-M8 do). Without the fixed
+script if we encountered an enemy ship that isn't configured (TS, TP,
+TM, TL and drones) the fighters wouldn't shoot it and the carrier
+wouldn't retreat because there were still enemies around. We'd hang in
+the sector until someone else destroyed the enemy or in case of drones
+if the drones actually blew up our fighters.
+
+The changed script treats fighter drone as an M5, drone mk2 and TP -
+m4, TS - M3, TL and TM - M6. This decision is based on how much shield
+those usually have.
+
 ## ChangeLog ##
 
 ### v1.1 ###
