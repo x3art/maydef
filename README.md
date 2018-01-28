@@ -7,9 +7,9 @@ a name.
 ## What? ##
 
 This is a script for MLCC in Litcube's Universe (will not work for
-normal AP). You enable it through a hotkey to run on a dock and it
-will send MLCC ships to sectors where you have stations that have
-baddies in them.
+normal AP). You enable it through a hotkey that opens a configuration
+menu and it will send MLCC ships to sectors where you have stations
+that have baddies in them.
 
 ## How? ##
 
@@ -48,17 +48,6 @@ decisions that we make and hopefully no error messages.
 
 Below are a few notes on how things behave and a few problems that I
 might fix if there are any users.
-
-### Why is it run on a dock? ###
-
-You designate a dock to be your military headquarters and that dock
-has a staff that monitors satellites and I don't know what more to say
-here because I suck at roleplay. The actual reason is that I haven't
-bothered figuring out how to run and manage scripts that run somewhere
-that isn't stations or ships. It might be possible, but why not?
-
-But what happens if the dock gets destroyed you ask? Well, you'll have
-to push a few buttons again.
 
 ### How do we decide which ships to send? ###
 
