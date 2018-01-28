@@ -98,3 +98,10 @@ but there are risks with doing that (like if the threat drops because
 a carrier docks its fighters and then relaunches those fighters we
 could end up oscilating).
 
+## ChangeLog ##
+
+### v1.1 ###
+
+ - Various bug fixes.
+ - Included is a fixup to the standard MLCC carrier fighter script.
+ 
