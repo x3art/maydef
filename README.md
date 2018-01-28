@@ -99,6 +99,20 @@ The changed script treats fighter drone as an M5, drone mk2 and TP -
 m4, TS - M3, TL and TM - M6. This decision is based on how much shield
 those usually have.
 
+### MLCC carrier script changes ###
+
+This includes a fixed script for MLCC carriers. The carrier couldn't
+get closer to a target if it was outside of interception range and the
+interception range was set high (in the tested case it was 45km). This
+wasn't a bug in the script as such actually, it just seems that the
+game engine itself is weird/buggy. When following an object at a
+distance of 40km it just immediately returns and says we're there,
+when following the same object at a distance of 15km things work
+correctly. I didn't test further because there was no need. The
+problem lies somewhere with distances between 15 and 40km. (Could it
+be ~32.8km? A number that popped into my head for no particular
+reason).
+
 ## ChangeLog ##
 
 ### v1.1 ###
@@ -112,8 +126,5 @@ those usually have.
  - The script no longer runs on a dock. No user input required, things
    upgrade automagically.
 
- - Included is a fixup to the standard MLCC carrier script where the
-   carrier couldn't get closer to a target if it was outside of
-   interception range and the interception range was set high (in the
-   tested case it was 45km).
+ - Included is a fixup to the standard MLCC carrier script.
 
