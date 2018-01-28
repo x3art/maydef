@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Lib.Cmd.MLCC.S.Assist.Carrier.F</name>
-	<version>58</version>
+	<version>60</version>
 	<engineversion>50</engineversion>
 	<description>Lib Cmd: MLCC Sortie Assist - Fighter</description>
 	<arguments>
@@ -1430,7 +1430,7 @@
 			<sval type="string" val="Lib.Cmd.MLCC.S.Assist.Carrier.F" />
 			<sval type="int" val="50" />
 			<sval type="string" val="Lib Cmd: MLCC Sortie Assist - Fighter" />
-			<sval type="int" val="58" />
+			<sval type="int" val="60" />
 			<sval type="int" val="0" />
 			<sval type="array" size="34">
 				<sval type="string" val="Options" />
