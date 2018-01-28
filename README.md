@@ -13,20 +13,16 @@ baddies in them.
 
 ## How? ##
 
-Assign hotkey for "Mayhem defense". Push hotkey. Click on "Defense
-dock", click on pretty much any station, but I'd recommend an MLCC
-dock (I might fix things in the future so that you can only use MLCC
-docks for this). That's it. Now your MLCC ships will fly out to shoot
-baddies in your sectors.
+Assign hotkey for "Mayhem defense". Push hotkey. Click on "START".
+That's it. Now your MLCC ships that are set to intercept will fly out
+to shoot baddies in your sectors.
 
 ## UI ##
 
-On top of every menu there is the name of the station where the script
-is running. If new defense missions are blocked it will be indicated
-after the name. Below is a line for blocking all new defense missions
-and making all defense ships retreat. You might want to use that
-before taking command of MLCC ships yourself (although we will not try
-to use ships that aren't currently docked).
+On top of every menu there is line that you can click for blocking all
+new defense missions and making all defense ships retreat. You might
+want to use that before taking command of MLCC ships yourself
+(although we will not try to use ships that aren't currently docked).
 
 The first menu is "Sectors". This contains a list of the sectors we
 care about (sectors where you own stations), current threat value of
@@ -37,12 +33,13 @@ and a selection to add more sectors to this list.
 The second menu is "Options". "Enemy:defender threat ratio" is how
 much overkill we want to use on the enemy ships. `1:2` means that for
 each enemy M6 we send two of our M6s (or equivalent fire power).
-"Block defenders" does what it says. Below you can set here how
-threatening you think various ship classes are. This is applied
-equally to enemy and your own ships. Your own carriers also count
-their docked fighters into their threat. We don't do that for enemy
-carriers (but when the enemy carrier launches fighters, we'll notice
-that and send reinforcements if necessary).
+"Block defenders" does what it says. "Block defending extra sectors"
+blocks defending extra sectors. Below you can set here how threatening
+you think various ship classes are. This is applied equally to enemy
+and your own ships. Your own carriers also count their docked fighters
+into their threat. We don't do that for enemy carriers (but when the
+enemy carrier launches fighters, we'll notice that and send
+reinforcements if necessary).
 
 The third menu is "Log". This contains a bunch of spam about various
 decisions that we make and hopefully no error messages.
@@ -118,5 +115,16 @@ those usually have.
 ### v1.1 ###
 
  - Various bug fixes.
+
  - Included is a fixup to the standard MLCC carrier fighter script.
- 
+
+### v1.2 ###
+
+ - The script no longer runs on a dock. No user input required, things
+   upgrade automagically.
+
+ - Included is a fixup to the standard MLCC carrier script where the
+   carrier couldn't get closer to a target if it was outside of
+   interception range and the interception range was set high (in the
+   tested case it was 45km).
+
