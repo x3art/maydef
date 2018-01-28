@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Maydef.Cmd.Defend.Sector</name>
-	<version>4</version>
+	<version>5</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
@@ -573,43 +573,13 @@
 			<var>null</var>
 		</line>
 		<line linenr="056" indent="" />
-		<line linenr="057" indent="" />
-		<line linenr="058" indent="" />
-		<line linenr="059" indent="" />
-		<line linenr="060" indent="" />
-		<line linenr="061" indent="" />
-		<line linenr="062" indent="" />
-		<line linenr="063" indent="" />
-		<line linenr="064" indent="" />
-		<line linenr="065" indent="" />
-		<line linenr="066" indent="" />
-		<line linenr="067" indent="" />
-		<line linenr="068" indent="" />
-		<line linenr="069" indent="" />
-		<line linenr="070" indent="" />
-		<line linenr="071" indent="">
-			<comment>* -----------------------------------------</comment>
-		</line>
-		<line linenr="072" indent="&#160;">
-			<comment>* -----------------------------------------</comment>
-		</line>
-		<line linenr="073" indent="" />
-		<line linenr="074" indent="">
-			<var>JumpIn</var>
-			<text>:</text>
-		</line>
-		<line linenr="075" indent="" />
-		<line linenr="076" indent="">
-			<text>endsub</text>
-		</line>
-		<line linenr="077" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
 			<sval type="string" val="Maydef.Cmd.Defend.Sector" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="4" />
+			<sval type="int" val="5" />
 			<sval type="int" val="0" />
 			<sval type="array" size="13">
 				<sval type="string" val="sector" />
@@ -626,7 +596,7 @@
 				<sval type="string" val="MissionCurrent" />
 				<sval type="string" val="MissionOptionsCurrent" />
 			</sval>
-			<sval type="array" size="43">
+			<sval type="array" size="41">
 				<sval type="array" size="3">
 					<sval type="int" val="120" />
 					<sval type="int" val="18" />
@@ -1000,13 +970,6 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="101" />
-					<sval type="string" val="JumpIn" />
-				</sval>
-				<sval type="array" size="1">
-					<sval type="int" val="1168" />
-				</sval>
 			</sval>
 			<sval type="array" size="1">
 				<sval type="array" size="2">
@@ -1014,7 +977,7 @@
 					<sval type="string" val="" />
 				</sval>
 			</sval>
-			<sval type="array" size="39">
+			<sval type="array" size="20">
 				<sval type="array" size="3">
 					<sval type="int" val="0" />
 					<sval type="int" val="1" />
@@ -1097,84 +1060,6 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="41" />
-					<sval type="int" val="1" />
-					<sval type="string" val="-----------------------------------------" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="41" />
-					<sval type="int" val="1" />
-					<sval type="string" val="-----------------------------------------" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="41" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="42" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="43" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

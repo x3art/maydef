@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Maydef.Menu</name>
-	<version>2</version>
+	<version>3</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments />
@@ -123,7 +123,7 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>3</var>
+			<var>2</var>
 		</line>
 		<line linenr="013" indent="">
 			<var>$SettingsVersion</var>
@@ -138,7 +138,7 @@
 			<text> </text>
 			<text>+</text>
 			<text> </text>
-			<text>'1'</text>
+			<text>'2'</text>
 		</line>
 		<line linenr="014" indent="" />
 		<line linenr="015" indent="">
@@ -392,21 +392,8 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="040" indent="&#160;">
-			<comment>* current Dock</comment>
-		</line>
+		<line linenr="040" indent="&#160;" />
 		<line linenr="041" indent="&#160;">
-			<var>$Settings</var>
-			<text>[</text>
-			<var>2</var>
-			<text>]</text>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="042" indent="&#160;" />
-		<line linenr="043" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -422,11 +409,11 @@
 			<text>=</text>
 			<var>$Settings</var>
 		</line>
-		<line linenr="044" indent="">
+		<line linenr="042" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="045" indent="" />
-		<line linenr="046" indent="">
+		<line linenr="043" indent="" />
+		<line linenr="044" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -437,7 +424,7 @@
 			<sval type="string" val="Maydef.Menu" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="2" />
+			<sval type="int" val="3" />
 			<sval type="int" val="0" />
 			<sval type="array" size="11">
 				<sval type="string" val="Description" />
@@ -452,7 +439,7 @@
 				<sval type="string" val="SavedVersion" />
 				<sval type="string" val="Args" />
 			</sval>
-			<sval type="array" size="32">
+			<sval type="array" size="31">
 				<sval type="array" size="4">
 					<sval type="int" val="158" />
 					<sval type="int" val="5" />
@@ -544,7 +531,7 @@
 					<sval type="int" val="6" />
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
-					<sval type="int" val="3" />
+					<sval type="int" val="2" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -559,7 +546,7 @@
 					<sval type="int" val="15" />
 					<sval type="int" val="11" />
 					<sval type="int" val="5" />
-					<sval type="string" val="1" />
+					<sval type="string" val="2" />
 					<sval type="int" val="15" />
 					<sval type="int" val="11" />
 					<sval type="int" val="5" />
@@ -712,15 +699,6 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="130" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
-					<sval type="int" val="4" />
-					<sval type="int" val="2" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
 					<sval type="int" val="131074" />
@@ -738,7 +716,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="15">
+			<sval type="array" size="14">
 				<sval type="array" size="2">
 					<sval type="int" val="3" />
 					<sval type="int" val="2" />
@@ -790,17 +768,12 @@
 					<sval type="int" val="1" />
 					<sval type="string" val="current Section" />
 				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="28" />
-					<sval type="int" val="1" />
-					<sval type="string" val="current Dock" />
-				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="29" />
+					<sval type="int" val="28" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="31" />
+					<sval type="int" val="30" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

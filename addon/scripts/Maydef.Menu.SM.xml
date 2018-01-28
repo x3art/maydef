@@ -3,7 +3,7 @@
 <!-- Generated using X-Studio -->
 <script>
 	<name>Maydef.Menu.SM</name>
-	<version>102</version>
+	<version>105</version>
 	<engineversion>50</engineversion>
 	<description></description>
 	<arguments>
@@ -66,57 +66,38 @@
 			<var>1</var>
 			<text>]</text>
 		</line>
-		<line linenr="007" indent="">
-			<var>$DefDock</var>
+		<line linenr="007" indent="" />
+		<line linenr="008" indent="">
+			<var>$StateKey</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$Settings</var>
-			<text>[</text>
-			<var>2</var>
-			<text>]</text>
+			<text>'maydef_State'</text>
 		</line>
-		<line linenr="008" indent="" />
-		<line linenr="009" indent="">
-			<var>$mdState</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>null</var>
-		</line>
+		<line linenr="009" indent="" />
 		<line linenr="010" indent="">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$DefDock</var>
-		</line>
-		<line linenr="011" indent="&#160;">
 			<var>$mdState</var>
 			<text> </text>
 			<text>=</text>
-			<text> </text>
-			<var>$DefDock</var>
-			<text>-&gt;</text>
 			<text> </text>
 			<text>get</text>
 			<text> </text>
-			<text>local</text>
+			<text>global</text>
 			<text> </text>
 			<text>variable</text>
 			<text>:</text>
 			<text> </text>
 			<text>name</text>
 			<text>=</text>
-			<text>'maydef_State'</text>
+			<var>$StateKey</var>
 		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="">
+		<line linenr="011" indent="" />
+		<line linenr="012" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$CallbackReturn</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="013" indent="&#160;">
 			<text>goto</text>
 			<text> </text>
 			<text>label</text>
@@ -124,29 +105,29 @@
 			<var>CallBackReturn</var>
 			<text>:</text>
 		</line>
-		<line linenr="015" indent="">
+		<line linenr="014" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="016" indent="" />
-		<line linenr="017" indent="">
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="">
 			<comment>* if not $FirstRun</comment>
 		</line>
-		<line linenr="018" indent="">
+		<line linenr="017" indent="">
 			<comment>* set global variable: name=$Key.Menu value=$Menu</comment>
 		</line>
-		<line linenr="019" indent="">
+		<line linenr="018" indent="">
 			<comment>* return null</comment>
 		</line>
-		<line linenr="020" indent="">
+		<line linenr="019" indent="">
 			<comment>* end</comment>
 		</line>
-		<line linenr="021" indent="" />
-		<line linenr="022" indent="">
+		<line linenr="020" indent="" />
+		<line linenr="021" indent="">
 			<var>WriteMenu</var>
 			<text>:</text>
 		</line>
-		<line linenr="023" indent="" />
-		<line linenr="024" indent="">
+		<line linenr="022" indent="" />
+		<line linenr="023" indent="">
 			<var>$Menu</var>
 			<text> </text>
 			<text>=</text>
@@ -162,7 +143,7 @@
 			<text>=</text>
 			<var>$Key.Menu</var>
 		</line>
-		<line linenr="025" indent="">
+		<line linenr="024" indent="">
 			<text>resize</text>
 			<text> </text>
 			<text>array</text>
@@ -173,18 +154,18 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="026" indent="" />
-		<line linenr="027" indent="">
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>AddOptions</var>
 			<text>:</text>
 		</line>
-		<line linenr="028" indent="" />
-		<line linenr="029" indent="">
+		<line linenr="027" indent="" />
+		<line linenr="028" indent="">
 			<comment>* set menu option: $Menu, page up/down keys for info=[FALSE]</comment>
 		</line>
-		<line linenr="030" indent="">
+		<line linenr="029" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -200,17 +181,17 @@
 			<text>=</text>
 			<var>$Menu</var>
 		</line>
-		<line linenr="031" indent="">
+		<line linenr="030" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="032" indent="" />
-		<line linenr="033" indent="">
+		<line linenr="031" indent="" />
+		<line linenr="032" indent="">
 			<var>CallBackReturn</var>
 			<text>:</text>
 		</line>
-		<line linenr="034" indent="">
+		<line linenr="033" indent="">
 			<var>$ControlType</var>
 			<text> </text>
 			<text>=</text>
@@ -220,18 +201,18 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="035" indent="">
+		<line linenr="034" indent="">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[FALSE]</var>
 		</line>
-		<line linenr="036" indent="" />
-		<line linenr="037" indent="">
+		<line linenr="035" indent="" />
+		<line linenr="036" indent="">
 			<comment>* write to player logbook: printf: fmt='CB %s %s %s', $ControlType, $Control, $CallbackReturn, null, null</comment>
 		</line>
-		<line linenr="038" indent="">
+		<line linenr="037" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$ControlType</var>
@@ -240,7 +221,7 @@
 			<text> </text>
 			<var>-4</var>
 		</line>
-		<line linenr="039" indent="&#160;">
+		<line linenr="038" indent="&#160;">
 			<var>$ReturnID</var>
 			<text> </text>
 			<text>=</text>
@@ -250,7 +231,7 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="040" indent="&#160;">
+		<line linenr="039" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$ReturnID</var>
@@ -259,7 +240,7 @@
 			<text> </text>
 			<text>'sectionMenu'</text>
 		</line>
-		<line linenr="041" indent="&#160;&#160;">
+		<line linenr="040" indent="&#160;&#160;">
 			<var>$currentSection</var>
 			<text> </text>
 			<text>=</text>
@@ -269,14 +250,14 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="042" indent="&#160;&#160;">
+		<line linenr="041" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="043" indent="&#160;">
+		<line linenr="042" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -287,7 +268,7 @@
 			<text> </text>
 			<text>'threatMult'</text>
 		</line>
-		<line linenr="044" indent="&#160;&#160;">
+		<line linenr="043" indent="&#160;&#160;">
 			<var>$ThreatMultiplier</var>
 			<text> </text>
 			<text>=</text>
@@ -297,7 +278,7 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="045" indent="&#160;&#160;">
+		<line linenr="044" indent="&#160;&#160;">
 			<var>$ThreatMultiplier</var>
 			<text> </text>
 			<text>=</text>
@@ -308,7 +289,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="046" indent="&#160;&#160;">
+		<line linenr="045" indent="&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -325,14 +306,14 @@
 			<text> </text>
 			<var>$ThreatMultiplier</var>
 		</line>
-		<line linenr="047" indent="&#160;&#160;">
+		<line linenr="046" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="048" indent="&#160;">
+		<line linenr="047" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -343,7 +324,7 @@
 			<text> </text>
 			<text>'block'</text>
 		</line>
-		<line linenr="049" indent="&#160;&#160;">
+		<line linenr="048" indent="&#160;&#160;">
 			<var>$block</var>
 			<text> </text>
 			<text>=</text>
@@ -353,7 +334,7 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="050" indent="&#160;&#160;">
+		<line linenr="049" indent="&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -370,14 +351,14 @@
 			<text> </text>
 			<var>$block</var>
 		</line>
-		<line linenr="051" indent="&#160;&#160;">
+		<line linenr="050" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="052" indent="&#160;">
+		<line linenr="051" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -388,7 +369,7 @@
 			<text> </text>
 			<text>'blockExtra'</text>
 		</line>
-		<line linenr="053" indent="&#160;&#160;">
+		<line linenr="052" indent="&#160;&#160;">
 			<var>$block</var>
 			<text> </text>
 			<text>=</text>
@@ -398,7 +379,7 @@
 			<var>2</var>
 			<text>]</text>
 		</line>
-		<line linenr="054" indent="&#160;&#160;">
+		<line linenr="053" indent="&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -415,21 +396,21 @@
 			<text> </text>
 			<var>$block</var>
 		</line>
-		<line linenr="055" indent="&#160;&#160;">
+		<line linenr="054" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="056" indent="&#160;">
+		<line linenr="055" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="057" indent="">
+		<line linenr="056" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="058" indent="" />
-		<line linenr="059" indent="">
+		<line linenr="057" indent="" />
+		<line linenr="058" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$ControlType</var>
@@ -438,7 +419,7 @@
 			<text> </text>
 			<var>-20</var>
 		</line>
-		<line linenr="060" indent="&#160;">
+		<line linenr="059" indent="&#160;">
 			<var>$ReturnID</var>
 			<text> </text>
 			<text>=</text>
@@ -448,128 +429,44 @@
 			<var>0</var>
 			<text>]</text>
 		</line>
-		<line linenr="061" indent="&#160;">
+		<line linenr="060" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$ReturnID</var>
 			<text> </text>
 			<text>==</text>
 			<text> </text>
-			<text>'PickDock'</text>
+			<text>'Start'</text>
 		</line>
-		<line linenr="062" indent="&#160;&#160;">
-			<var>$DefDock</var>
+		<line linenr="061" indent="&#160;&#160;" interruptable="@">
+			<text>START</text>
 			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>[THIS]</var>
+			<var>[NULL]</var>
 			<text>-&gt;</text>
+			<text>call</text>
 			<text> </text>
-			<text>get</text>
+			<text>script</text>
 			<text> </text>
-			<text>user</text>
-			<text> </text>
-			<text>input</text>
+			<call>Maydef.Monitor</call>
 			<text>:</text>
 			<text> </text>
-			<text>type</text>
+		</line>
+		<line linenr="062" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
-			<var>[Var/Station]</var>
-			<text>,</text>
+			<text>wait</text>
 			<text> </text>
-			<text>title</text>
-			<text>=</text>
-			<text>'Select new defense dock'</text>
+			<var>2000</var>
+			<text> </text>
+			<text>ms</text>
 		</line>
 		<line linenr="063" indent="&#160;&#160;">
-			<text>if</text>
-			<text> </text>
-			<var>$DefDock</var>
-		</line>
-		<line linenr="064" indent="&#160;&#160;&#160;">
-			<text>if</text>
-			<text> </text>
-			<text>not</text>
-			<text> </text>
-			<var>$DefDock</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>is</text>
-			<text> </text>
-			<text>named</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<text>'Maydef.Monitor.Dock'</text>
-			<text> </text>
-			<text>on</text>
-			<text> </text>
-			<text>stack</text>
-			<text> </text>
-			<text>of</text>
-			<text> </text>
-			<text>task</text>
-			<text>=</text>
-			<text> </text>
-			<var>304</var>
-		</line>
-		<line linenr="065" indent="&#160;&#160;&#160;&#160;">
-			<var>$DefDock</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>begin</text>
-			<text> </text>
-			<text>task</text>
-			<text> </text>
-			<var>304</var>
-			<text> </text>
-			<text>with</text>
-			<text> </text>
-			<text>script</text>
-			<text> </text>
-			<call>Maydef.Monitor.Dock</call>
-			<text> </text>
-			<text>and</text>
-			<text> </text>
-			<text>priority</text>
-			<text> </text>
-			<var>10</var>
-			<text>:</text>
-			<text> </text>
-			<text>arg1</text>
-			<text>=</text>
-			<var>null</var>
-			<text> </text>
-			<text>arg2</text>
-			<text>=</text>
-			<var>null</var>
-			<text> </text>
-			<text>arg3</text>
-			<text>=</text>
-			<var>null</var>
-			<text> </text>
-			<text>arg4</text>
-			<text>=</text>
-			<var>null</var>
-			<text> </text>
-			<text>arg5</text>
-			<text>=</text>
-			<var>null</var>
-		</line>
-		<line linenr="066" indent="&#160;&#160;&#160;">
-			<text>end</text>
-		</line>
-		<line linenr="067" indent="&#160;&#160;">
-			<text>end</text>
-		</line>
-		<line linenr="068" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="069" indent="&#160;">
+		<line linenr="064" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -580,7 +477,7 @@
 			<text> </text>
 			<text>'ClassThreat'</text>
 		</line>
-		<line linenr="070" indent="&#160;&#160;">
+		<line linenr="065" indent="&#160;&#160;">
 			<var>$ShipThreats</var>
 			<text> </text>
 			<text>=</text>
@@ -597,7 +494,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="071" indent="&#160;&#160;">
+		<line linenr="066" indent="&#160;&#160;">
 			<var>$class</var>
 			<text> </text>
 			<text>=</text>
@@ -607,7 +504,7 @@
 			<var>1</var>
 			<text>]</text>
 		</line>
-		<line linenr="072" indent="&#160;&#160;">
+		<line linenr="067" indent="&#160;&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -624,7 +521,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="073" indent="&#160;&#160;">
+		<line linenr="068" indent="&#160;&#160;">
 			<var>$line</var>
 			<text> </text>
 			<text>=</text>
@@ -651,7 +548,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="074" indent="&#160;&#160;">
+		<line linenr="069" indent="&#160;&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -675,7 +572,7 @@
 			<text>=</text>
 			<var>$line</var>
 		</line>
-		<line linenr="075" indent="&#160;&#160;">
+		<line linenr="070" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -686,7 +583,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="076" indent="&#160;&#160;&#160;">
+		<line linenr="071" indent="&#160;&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -703,14 +600,14 @@
 			<text> </text>
 			<var>$threat</var>
 		</line>
-		<line linenr="077" indent="&#160;&#160;">
+		<line linenr="072" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="078" indent="&#160;">
+		<line linenr="073" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -721,7 +618,7 @@
 			<text> </text>
 			<text>'rmSector'</text>
 		</line>
-		<line linenr="079" indent="&#160;&#160;">
+		<line linenr="074" indent="&#160;&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -731,7 +628,7 @@
 			<var>1</var>
 			<text>]</text>
 		</line>
-		<line linenr="080" indent="&#160;&#160;">
+		<line linenr="075" indent="&#160;&#160;">
 			<var>$ExtraSectors</var>
 			<text> </text>
 			<text>=</text>
@@ -748,7 +645,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="081" indent="&#160;&#160;">
+		<line linenr="076" indent="&#160;&#160;">
 			<var>$i</var>
 			<text> </text>
 			<text>=</text>
@@ -771,7 +668,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="082" indent="&#160;&#160;">
+		<line linenr="077" indent="&#160;&#160;">
 			<text>remove</text>
 			<text> </text>
 			<text>element</text>
@@ -788,14 +685,14 @@
 			<text> </text>
 			<var>$i</var>
 		</line>
-		<line linenr="083" indent="&#160;&#160;">
+		<line linenr="078" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="084" indent="&#160;">
+		<line linenr="079" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -806,7 +703,7 @@
 			<text> </text>
 			<text>'addSector'</text>
 		</line>
-		<line linenr="085" indent="&#160;&#160;">
+		<line linenr="080" indent="&#160;&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -830,7 +727,7 @@
 			<text>=</text>
 			<text>'Add sector to defend'</text>
 		</line>
-		<line linenr="086" indent="&#160;&#160;">
+		<line linenr="081" indent="&#160;&#160;">
 			<var>$ExtraSectors</var>
 			<text> </text>
 			<text>=</text>
@@ -847,10 +744,10 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="087" indent="&#160;&#160;">
+		<line linenr="082" indent="&#160;&#160;">
 			<comment>* skip if find $sector in array: $ExtraSectors</comment>
 		</line>
-		<line linenr="088" indent="&#160;&#160;">
+		<line linenr="083" indent="&#160;&#160;">
 			<text>append</text>
 			<text> </text>
 			<var>$sector</var>
@@ -861,7 +758,7 @@
 			<text> </text>
 			<var>$ExtraSectors</var>
 		</line>
-		<line linenr="089" indent="&#160;&#160;">
+		<line linenr="084" indent="&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -878,14 +775,14 @@
 			<text> </text>
 			<var>$ExtraSectors</var>
 		</line>
-		<line linenr="090" indent="&#160;&#160;">
+		<line linenr="085" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="091" indent="&#160;">
+		<line linenr="086" indent="&#160;">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -896,7 +793,7 @@
 			<text> </text>
 			<text>'blockAndRetreat'</text>
 		</line>
-		<line linenr="092" indent="&#160;&#160;">
+		<line linenr="087" indent="&#160;&#160;">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -913,7 +810,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="093" indent="&#160;&#160;" interruptable="@">
+		<line linenr="088" indent="&#160;&#160;" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -927,32 +824,32 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="094" indent="&#160;&#160;">
+		<line linenr="089" indent="&#160;&#160;">
 			<var>$refresh</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[TRUE]</var>
 		</line>
-		<line linenr="095" indent="&#160;">
+		<line linenr="090" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="096" indent="">
+		<line linenr="091" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="097" indent="" />
-		<line linenr="098" indent="">
+		<line linenr="092" indent="" />
+		<line linenr="093" indent="">
 			<text>if</text>
 			<text> </text>
 			<var>$refresh</var>
 		</line>
-		<line linenr="099" indent="&#160;">
+		<line linenr="094" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>SetMenuPassThrough</var>
 			<text>:</text>
 		</line>
-		<line linenr="100" indent="&#160;">
+		<line linenr="095" indent="&#160;">
 			<text>goto</text>
 			<text> </text>
 			<text>label</text>
@@ -960,55 +857,38 @@
 			<var>WriteMenu</var>
 			<text>:</text>
 		</line>
-		<line linenr="101" indent="">
+		<line linenr="096" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="102" indent="" />
-		<line linenr="103" indent="">
+		<line linenr="097" indent="" />
+		<line linenr="098" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="104" indent="" />
-		<line linenr="105" indent="">
+		<line linenr="099" indent="" />
+		<line linenr="100" indent="">
 			<var>AddOptions</var>
 			<text>:</text>
 		</line>
-		<line linenr="106" indent="&#160;">
+		<line linenr="101" indent="&#160;">
 			<var>$mdState</var>
 			<text> </text>
 			<text>=</text>
-			<text> </text>
-			<var>null</var>
-		</line>
-		<line linenr="107" indent="&#160;">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$DefDock</var>
-		</line>
-		<line linenr="108" indent="&#160;&#160;">
-			<var>$mdState</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$DefDock</var>
-			<text>-&gt;</text>
 			<text> </text>
 			<text>get</text>
 			<text> </text>
-			<text>local</text>
+			<text>global</text>
 			<text> </text>
 			<text>variable</text>
 			<text>:</text>
 			<text> </text>
 			<text>name</text>
 			<text>=</text>
-			<text>'maydef_State'</text>
+			<var>$StateKey</var>
 		</line>
-		<line linenr="109" indent="&#160;" />
-		<line linenr="110" indent="&#160;">
+		<line linenr="102" indent="&#160;" />
+		<line linenr="103" indent="&#160;">
 			<var>$sections</var>
 			<text> </text>
 			<text>=</text>
@@ -1022,7 +902,7 @@
 			<text>=</text>
 			<var>3</var>
 		</line>
-		<line linenr="111" indent="&#160;">
+		<line linenr="104" indent="&#160;">
 			<var>$sections</var>
 			<text>[</text>
 			<var>0</var>
@@ -1032,7 +912,7 @@
 			<text> </text>
 			<text>'Sectors'</text>
 		</line>
-		<line linenr="112" indent="&#160;">
+		<line linenr="105" indent="&#160;">
 			<var>$sections</var>
 			<text>[</text>
 			<var>1</var>
@@ -1042,7 +922,7 @@
 			<text> </text>
 			<text>'Options'</text>
 		</line>
-		<line linenr="113" indent="&#160;">
+		<line linenr="106" indent="&#160;">
 			<var>$sections</var>
 			<text>[</text>
 			<var>2</var>
@@ -1052,8 +932,8 @@
 			<text> </text>
 			<text>'Log'</text>
 		</line>
-		<line linenr="114" indent="&#160;" />
-		<line linenr="115" indent="&#160;">
+		<line linenr="107" indent="&#160;" />
+		<line linenr="108" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1073,7 +953,7 @@
 			<text>=</text>
 			<text>'Manage'</text>
 		</line>
-		<line linenr="116" indent="&#160;&#160;">
+		<line linenr="109" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -1111,22 +991,22 @@
 			<text>=</text>
 			<text>'sectionMenu'</text>
 		</line>
-		<line linenr="117" indent="&#160;&#160;" />
-		<line linenr="118" indent="&#160;&#160;">
+		<line linenr="110" indent="&#160;&#160;" />
+		<line linenr="111" indent="&#160;&#160;">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
-			<var>$DefDock</var>
+			<var>$mdState</var>
 		</line>
-		<line linenr="119" indent="&#160;">
+		<line linenr="112" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>'Set defense dock'</text>
+			<text>'START'</text>
 		</line>
-		<line linenr="120" indent="&#160;&#160;">
+		<line linenr="113" indent="&#160;&#160;">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -1140,7 +1020,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="121" indent="&#160;&#160;">
+		<line linenr="114" indent="&#160;&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -1148,9 +1028,9 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<text>'PickDock'</text>
+			<text>'Start'</text>
 		</line>
-		<line linenr="122" indent="&#160;&#160;">
+		<line linenr="115" indent="&#160;&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>1</var>
@@ -1160,7 +1040,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="123" indent="&#160;&#160;&#160;">
+		<line linenr="116" indent="&#160;&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1188,22 +1068,17 @@
 			<text>=</text>
 			<var>$v</var>
 		</line>
-		<line linenr="124" indent="&#160;&#160;">
+		<line linenr="117" indent="&#160;&#160;">
 			<text>else</text>
 		</line>
-		<line linenr="125" indent="&#160;&#160;">
+		<line linenr="118" indent="&#160;&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$DefDock</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>get</text>
-			<text> </text>
-			<text>name</text>
+			<text>'Running'</text>
 		</line>
-		<line linenr="126" indent="&#160;&#160;">
+		<line linenr="119" indent="&#160;&#160;">
 			<var>$block</var>
 			<text> </text>
 			<text>=</text>
@@ -1220,7 +1095,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="127" indent="&#160;&#160;">
+		<line linenr="120" indent="&#160;&#160;">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
@@ -1231,7 +1106,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="128" indent="&#160;">
+		<line linenr="121" indent="&#160;">
 			<var>$name</var>
 			<text> </text>
 			<text>=</text>
@@ -1258,7 +1133,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="129" indent="&#160;">
+		<line linenr="122" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -1277,7 +1152,7 @@
 			<text>=</text>
 			<var>$name</var>
 		</line>
-		<line linenr="130" indent="&#160;">
+		<line linenr="123" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>section</text>
@@ -1291,7 +1166,7 @@
 			<text> </text>
 			<var>$Menu</var>
 		</line>
-		<line linenr="131" indent="&#160;&#160;">
+		<line linenr="124" indent="&#160;&#160;">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -1305,7 +1180,7 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="132" indent="&#160;">
+		<line linenr="125" indent="&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -1315,7 +1190,7 @@
 			<text> </text>
 			<text>'blockAndRetreat'</text>
 		</line>
-		<line linenr="133" indent="&#160;&#160;">
+		<line linenr="126" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1343,11 +1218,11 @@
 			<text>=</text>
 			<var>$v</var>
 		</line>
-		<line linenr="134" indent="&#160;">
+		<line linenr="127" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="135" indent="&#160;&#160;" />
-		<line linenr="136" indent="&#160;">
+		<line linenr="128" indent="&#160;&#160;" />
+		<line linenr="129" indent="&#160;">
 			<text>if</text>
 			<text> </text>
 			<var>$currentSection</var>
@@ -1356,13 +1231,13 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="137" indent="&#160;">
+		<line linenr="130" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>MenuSectors</var>
 			<text>:</text>
 		</line>
-		<line linenr="138" indent="">
+		<line linenr="131" indent="">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -1373,13 +1248,13 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="139" indent="">
+		<line linenr="132" indent="">
 			<text>gosub</text>
 			<text> </text>
 			<var>MenuOptions</var>
 			<text>:</text>
 		</line>
-		<line linenr="140" indent="">
+		<line linenr="133" indent="">
 			<text>else</text>
 			<text> </text>
 			<text>if</text>
@@ -1390,25 +1265,25 @@
 			<text> </text>
 			<var>2</var>
 		</line>
-		<line linenr="141" indent="&#160;">
+		<line linenr="134" indent="&#160;">
 			<text>gosub</text>
 			<text> </text>
 			<var>MenuLog</var>
 			<text>:</text>
 		</line>
-		<line linenr="142" indent="&#160;">
+		<line linenr="135" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="143" indent="&#160;" />
-		<line linenr="144" indent="&#160;">
+		<line linenr="136" indent="&#160;" />
+		<line linenr="137" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="145" indent="" />
-		<line linenr="146" indent="">
+		<line linenr="138" indent="" />
+		<line linenr="139" indent="">
 			<var>SetMenuPassThrough</var>
 			<text>:</text>
 		</line>
-		<line linenr="147" indent="">
+		<line linenr="140" indent="&#160;">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>0</var>
@@ -1418,7 +1293,7 @@
 			<text> </text>
 			<var>$SettingsVersion</var>
 		</line>
-		<line linenr="148" indent="&#160;">
+		<line linenr="141" indent="&#160;">
 			<var>$Settings</var>
 			<text>[</text>
 			<var>1</var>
@@ -1428,17 +1303,7 @@
 			<text> </text>
 			<var>$currentSection</var>
 		</line>
-		<line linenr="149" indent="&#160;">
-			<var>$Settings</var>
-			<text>[</text>
-			<var>2</var>
-			<text>]</text>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$DefDock</var>
-		</line>
-		<line linenr="150" indent="&#160;">
+		<line linenr="142" indent="&#160;">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -1454,15 +1319,15 @@
 			<text>=</text>
 			<var>$Settings</var>
 		</line>
-		<line linenr="151" indent="&#160;">
+		<line linenr="143" indent="&#160;">
 			<text>endsub</text>
 		</line>
-		<line linenr="152" indent="&#160;" />
-		<line linenr="153" indent="&#160;">
+		<line linenr="144" indent="&#160;" />
+		<line linenr="145" indent="&#160;">
 			<var>MenuSectors</var>
 			<text>:</text>
 		</line>
-		<line linenr="154" indent="&#160;">
+		<line linenr="146" indent="&#160;">
 			<var>$SectorThreats</var>
 			<text> </text>
 			<text>=</text>
@@ -1479,7 +1344,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="155" indent="&#160;&#160;">
+		<line linenr="147" indent="&#160;&#160;">
 			<var>$SectorDefenders</var>
 			<text> </text>
 			<text>=</text>
@@ -1496,8 +1361,8 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="156" indent="&#160;&#160;" />
-		<line linenr="157" indent="&#160;&#160;">
+		<line linenr="148" indent="&#160;&#160;" />
+		<line linenr="149" indent="&#160;&#160;">
 			<var>$line</var>
 			<text> </text>
 			<text>=</text>
@@ -1511,7 +1376,7 @@
 			<text>=</text>
 			<var>6</var>
 		</line>
-		<line linenr="158" indent="&#160;&#160;">
+		<line linenr="150" indent="&#160;&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>0</var>
@@ -1521,7 +1386,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="159" indent="&#160;&#160;">
+		<line linenr="151" indent="&#160;&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>1</var>
@@ -1531,7 +1396,7 @@
 			<text> </text>
 			<text>'Sector'</text>
 		</line>
-		<line linenr="160" indent="&#160;&#160;">
+		<line linenr="152" indent="&#160;&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>2</var>
@@ -1541,7 +1406,7 @@
 			<text> </text>
 			<var>200</var>
 		</line>
-		<line linenr="161" indent="&#160;">
+		<line linenr="153" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>3</var>
@@ -1551,7 +1416,7 @@
 			<text> </text>
 			<text>'Threat'</text>
 		</line>
-		<line linenr="162" indent="&#160;">
+		<line linenr="154" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>4</var>
@@ -1561,7 +1426,7 @@
 			<text> </text>
 			<var>300</var>
 		</line>
-		<line linenr="163" indent="&#160;">
+		<line linenr="155" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>5</var>
@@ -1571,7 +1436,7 @@
 			<text> </text>
 			<text>'Defense'</text>
 		</line>
-		<line linenr="164" indent="&#160;">
+		<line linenr="156" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1591,7 +1456,7 @@
 			<text>=</text>
 			<var>$line</var>
 		</line>
-		<line linenr="165" indent="&#160;">
+		<line linenr="157" indent="&#160;">
 			<var>$sectors</var>
 			<text> </text>
 			<text>=</text>
@@ -1608,7 +1473,7 @@
 			<text> </text>
 			<var>$SectorThreats</var>
 		</line>
-		<line linenr="166" indent="&#160;&#160;">
+		<line linenr="158" indent="&#160;&#160;">
 			<var>$XS.Iterator1</var>
 			<text> </text>
 			<text>=</text>
@@ -1621,17 +1486,17 @@
 			<text> </text>
 			<var>$sectors</var>
 		</line>
-		<line linenr="167" indent="&#160;&#160;">
+		<line linenr="159" indent="&#160;&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="168" indent="&#160;">
+		<line linenr="160" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator1</var>
 		</line>
-		<line linenr="169" indent="&#160;">
+		<line linenr="161" indent="&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -1641,7 +1506,7 @@
 			<var>$XS.Iterator1</var>
 			<text>]</text>
 		</line>
-		<line linenr="170" indent="&#160;">
+		<line linenr="162" indent="&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -1658,7 +1523,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="171" indent="&#160;">
+		<line linenr="163" indent="&#160;">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -1673,7 +1538,7 @@
 			<text> </text>
 			<text>string</text>
 		</line>
-		<line linenr="172" indent="">
+		<line linenr="164" indent="">
 			<var>$def</var>
 			<text> </text>
 			<text>=</text>
@@ -1690,7 +1555,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="173" indent="">
+		<line linenr="165" indent="">
 			<var>$def</var>
 			<text> </text>
 			<text>=</text>
@@ -1705,7 +1570,7 @@
 			<text> </text>
 			<text>string</text>
 		</line>
-		<line linenr="174" indent="">
+		<line linenr="166" indent="">
 			<var>$line</var>
 			<text> </text>
 			<text>=</text>
@@ -1719,7 +1584,7 @@
 			<text>=</text>
 			<var>6</var>
 		</line>
-		<line linenr="175" indent="&#160;">
+		<line linenr="167" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>0</var>
@@ -1729,7 +1594,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="176" indent="&#160;">
+		<line linenr="168" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>1</var>
@@ -1739,7 +1604,7 @@
 			<text> </text>
 			<var>$sector</var>
 		</line>
-		<line linenr="177" indent="&#160;">
+		<line linenr="169" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>2</var>
@@ -1749,7 +1614,7 @@
 			<text> </text>
 			<var>200</var>
 		</line>
-		<line linenr="178" indent="&#160;">
+		<line linenr="170" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>3</var>
@@ -1759,7 +1624,7 @@
 			<text> </text>
 			<var>$threat</var>
 		</line>
-		<line linenr="179" indent="&#160;">
+		<line linenr="171" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>4</var>
@@ -1769,7 +1634,7 @@
 			<text> </text>
 			<var>300</var>
 		</line>
-		<line linenr="180" indent="&#160;">
+		<line linenr="172" indent="&#160;">
 			<var>$line</var>
 			<text>[</text>
 			<var>5</var>
@@ -1779,7 +1644,7 @@
 			<text> </text>
 			<var>$def</var>
 		</line>
-		<line linenr="181" indent="&#160;">
+		<line linenr="173" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -1798,11 +1663,11 @@
 			<text>=</text>
 			<var>$line</var>
 		</line>
-		<line linenr="182" indent="&#160;">
+		<line linenr="174" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="183" indent="&#160;" />
-		<line linenr="184" indent="&#160;">
+		<line linenr="175" indent="&#160;" />
+		<line linenr="176" indent="&#160;">
 			<var>$ExtraSectors</var>
 			<text> </text>
 			<text>=</text>
@@ -1819,7 +1684,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="185" indent="&#160;">
+		<line linenr="177" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1839,7 +1704,7 @@
 			<text>=</text>
 			<text>'Extra guarded sectors'</text>
 		</line>
-		<line linenr="186" indent="&#160;">
+		<line linenr="178" indent="&#160;">
 			<var>$XS.Iterator2</var>
 			<text> </text>
 			<text>=</text>
@@ -1852,17 +1717,17 @@
 			<text> </text>
 			<var>$ExtraSectors</var>
 		</line>
-		<line linenr="187" indent="&#160;">
+		<line linenr="179" indent="&#160;">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="188" indent="&#160;">
+		<line linenr="180" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator2</var>
 		</line>
-		<line linenr="189" indent="&#160;">
+		<line linenr="181" indent="&#160;">
 			<var>$sector</var>
 			<text> </text>
 			<text>=</text>
@@ -1872,7 +1737,7 @@
 			<var>$XS.Iterator2</var>
 			<text>]</text>
 		</line>
-		<line linenr="190" indent="&#160;">
+		<line linenr="182" indent="&#160;">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -1886,7 +1751,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="191" indent="&#160;">
+		<line linenr="183" indent="&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -1896,7 +1761,7 @@
 			<text> </text>
 			<text>'rmSector'</text>
 		</line>
-		<line linenr="192" indent="&#160;&#160;">
+		<line linenr="184" indent="&#160;&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>1</var>
@@ -1906,7 +1771,7 @@
 			<text> </text>
 			<var>$sector</var>
 		</line>
-		<line linenr="193" indent="&#160;&#160;">
+		<line linenr="185" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -1934,10 +1799,10 @@
 			<text>=</text>
 			<var>$v</var>
 		</line>
-		<line linenr="194" indent="&#160;&#160;">
+		<line linenr="186" indent="&#160;&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="195" indent="&#160;&#160;">
+		<line linenr="187" indent="&#160;&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>section</text>
@@ -1951,7 +1816,7 @@
 			<text> </text>
 			<var>$Menu</var>
 		</line>
-		<line linenr="196" indent="&#160;&#160;">
+		<line linenr="188" indent="&#160;&#160;">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -1965,7 +1830,7 @@
 			<text>=</text>
 			<var>1</var>
 		</line>
-		<line linenr="197" indent="&#160;&#160;">
+		<line linenr="189" indent="&#160;&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -1975,7 +1840,7 @@
 			<text> </text>
 			<text>'addSector'</text>
 		</line>
-		<line linenr="198" indent="&#160;">
+		<line linenr="190" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -2003,15 +1868,15 @@
 			<text>=</text>
 			<var>$v</var>
 		</line>
-		<line linenr="199" indent="">
+		<line linenr="191" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="200" indent="" />
-		<line linenr="201" indent="">
+		<line linenr="192" indent="" />
+		<line linenr="193" indent="">
 			<var>MenuOptions</var>
 			<text>:</text>
 		</line>
-		<line linenr="202" indent="&#160;">
+		<line linenr="194" indent="&#160;">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -2031,7 +1896,7 @@
 			<text>=</text>
 			<text>'Options'</text>
 		</line>
-		<line linenr="203" indent="&#160;">
+		<line linenr="195" indent="&#160;">
 			<var>$ThreatMultiplier</var>
 			<text> </text>
 			<text>=</text>
@@ -2048,7 +1913,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="204" indent="&#160;">
+		<line linenr="196" indent="&#160;">
 			<var>$ThreatMultiplier</var>
 			<text> </text>
 			<text>=</text>
@@ -2059,7 +1924,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="205" indent="&#160;&#160;">
+		<line linenr="197" indent="&#160;&#160;">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -2073,7 +1938,7 @@
 			<text>=</text>
 			<var>5</var>
 		</line>
-		<line linenr="206" indent="&#160;">
+		<line linenr="198" indent="&#160;">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -2083,7 +1948,7 @@
 			<text> </text>
 			<text>'1:1'</text>
 		</line>
-		<line linenr="207" indent="">
+		<line linenr="199" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>1</var>
@@ -2093,7 +1958,7 @@
 			<text> </text>
 			<text>'1:2'</text>
 		</line>
-		<line linenr="208" indent="">
+		<line linenr="200" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>2</var>
@@ -2103,7 +1968,7 @@
 			<text> </text>
 			<text>'1:3'</text>
 		</line>
-		<line linenr="209" indent="">
+		<line linenr="201" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>3</var>
@@ -2113,7 +1978,7 @@
 			<text> </text>
 			<text>'1:4'</text>
 		</line>
-		<line linenr="210" indent="">
+		<line linenr="202" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>4</var>
@@ -2123,7 +1988,7 @@
 			<text> </text>
 			<text>'1:5'</text>
 		</line>
-		<line linenr="211" indent="">
+		<line linenr="203" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -2161,7 +2026,7 @@
 			<text>=</text>
 			<text>'threatMult'</text>
 		</line>
-		<line linenr="212" indent="">
+		<line linenr="204" indent="">
 			<var>$block</var>
 			<text> </text>
 			<text>=</text>
@@ -2178,7 +2043,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="213" indent="">
+		<line linenr="205" indent="">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -2192,7 +2057,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="214" indent="">
+		<line linenr="206" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -2202,7 +2067,7 @@
 			<text> </text>
 			<text>'No'</text>
 		</line>
-		<line linenr="215" indent="">
+		<line linenr="207" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>1</var>
@@ -2212,7 +2077,7 @@
 			<text> </text>
 			<text>'Yes'</text>
 		</line>
-		<line linenr="216" indent="">
+		<line linenr="208" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -2250,7 +2115,7 @@
 			<text>=</text>
 			<text>'block'</text>
 		</line>
-		<line linenr="217" indent="">
+		<line linenr="209" indent="">
 			<var>$block</var>
 			<text> </text>
 			<text>=</text>
@@ -2267,7 +2132,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="218" indent="">
+		<line linenr="210" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>value</text>
@@ -2305,8 +2170,8 @@
 			<text>=</text>
 			<text>'blockExtra'</text>
 		</line>
-		<line linenr="219" indent="" />
-		<line linenr="220" indent="">
+		<line linenr="211" indent="" />
+		<line linenr="212" indent="">
 			<var>$ShipThreats</var>
 			<text> </text>
 			<text>=</text>
@@ -2323,7 +2188,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="221" indent="">
+		<line linenr="213" indent="">
 			<var>$line</var>
 			<text> </text>
 			<text>=</text>
@@ -2337,7 +2202,7 @@
 			<text>=</text>
 			<var>4</var>
 		</line>
-		<line linenr="222" indent="">
+		<line linenr="214" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>0</var>
@@ -2347,7 +2212,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="223" indent="">
+		<line linenr="215" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>1</var>
@@ -2357,7 +2222,7 @@
 			<text> </text>
 			<text>'Class'</text>
 		</line>
-		<line linenr="224" indent="">
+		<line linenr="216" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>2</var>
@@ -2367,7 +2232,7 @@
 			<text> </text>
 			<var>150</var>
 		</line>
-		<line linenr="225" indent="">
+		<line linenr="217" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>3</var>
@@ -2377,7 +2242,7 @@
 			<text> </text>
 			<text>'Threat'</text>
 		</line>
-		<line linenr="226" indent="">
+		<line linenr="218" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -2397,7 +2262,7 @@
 			<text>=</text>
 			<var>$line</var>
 		</line>
-		<line linenr="227" indent="">
+		<line linenr="219" indent="">
 			<var>$classes</var>
 			<text> </text>
 			<text>=</text>
@@ -2414,7 +2279,7 @@
 			<text> </text>
 			<var>$ShipThreats</var>
 		</line>
-		<line linenr="228" indent="">
+		<line linenr="220" indent="">
 			<var>$classes</var>
 			<text> </text>
 			<text>=</text>
@@ -2425,7 +2290,7 @@
 			<text> </text>
 			<var>$classes</var>
 		</line>
-		<line linenr="229" indent="">
+		<line linenr="221" indent="">
 			<var>$XS.Iterator3</var>
 			<text> </text>
 			<text>=</text>
@@ -2438,17 +2303,17 @@
 			<text> </text>
 			<var>$classes</var>
 		</line>
-		<line linenr="230" indent="">
+		<line linenr="222" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator3</var>
 		</line>
-		<line linenr="231" indent="">
+		<line linenr="223" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator3</var>
 		</line>
-		<line linenr="232" indent="">
+		<line linenr="224" indent="">
 			<var>$class</var>
 			<text> </text>
 			<text>=</text>
@@ -2458,7 +2323,7 @@
 			<var>$XS.Iterator3</var>
 			<text>]</text>
 		</line>
-		<line linenr="233" indent="">
+		<line linenr="225" indent="">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -2475,7 +2340,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="234" indent="">
+		<line linenr="226" indent="">
 			<var>$threat</var>
 			<text> </text>
 			<text>=</text>
@@ -2490,7 +2355,7 @@
 			<text> </text>
 			<text>string</text>
 		</line>
-		<line linenr="235" indent="">
+		<line linenr="227" indent="">
 			<var>$c</var>
 			<text> </text>
 			<text>=</text>
@@ -2517,7 +2382,7 @@
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="236" indent="">
+		<line linenr="228" indent="">
 			<var>$line</var>
 			<text> </text>
 			<text>=</text>
@@ -2531,7 +2396,7 @@
 			<text>=</text>
 			<var>4</var>
 		</line>
-		<line linenr="237" indent="">
+		<line linenr="229" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>0</var>
@@ -2541,7 +2406,7 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="238" indent="">
+		<line linenr="230" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>1</var>
@@ -2551,7 +2416,7 @@
 			<text> </text>
 			<var>$class</var>
 		</line>
-		<line linenr="239" indent="">
+		<line linenr="231" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>2</var>
@@ -2561,7 +2426,7 @@
 			<text> </text>
 			<var>150</var>
 		</line>
-		<line linenr="240" indent="">
+		<line linenr="232" indent="">
 			<var>$line</var>
 			<text>[</text>
 			<var>3</var>
@@ -2571,7 +2436,7 @@
 			<text> </text>
 			<var>$threat</var>
 		</line>
-		<line linenr="241" indent="">
+		<line linenr="233" indent="">
 			<var>$v</var>
 			<text> </text>
 			<text>=</text>
@@ -2585,7 +2450,7 @@
 			<text>=</text>
 			<var>2</var>
 		</line>
-		<line linenr="242" indent="">
+		<line linenr="234" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>0</var>
@@ -2595,7 +2460,7 @@
 			<text> </text>
 			<text>'ClassThreat'</text>
 		</line>
-		<line linenr="243" indent="">
+		<line linenr="235" indent="">
 			<var>$v</var>
 			<text>[</text>
 			<var>1</var>
@@ -2605,7 +2470,7 @@
 			<text> </text>
 			<var>$class</var>
 		</line>
-		<line linenr="244" indent="">
+		<line linenr="236" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -2633,18 +2498,18 @@
 			<text>=</text>
 			<var>$v</var>
 		</line>
-		<line linenr="245" indent="">
+		<line linenr="237" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="246" indent="">
+		<line linenr="238" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="247" indent="" />
-		<line linenr="248" indent="">
+		<line linenr="239" indent="" />
+		<line linenr="240" indent="">
 			<var>MenuLog</var>
 			<text>:</text>
 		</line>
-		<line linenr="249" indent="">
+		<line linenr="241" indent="">
 			<var>$Log</var>
 			<text> </text>
 			<text>=</text>
@@ -2661,7 +2526,7 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="250" indent="">
+		<line linenr="242" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>custom</text>
@@ -2681,7 +2546,7 @@
 			<text>=</text>
 			<text>'Log'</text>
 		</line>
-		<line linenr="251" indent="">
+		<line linenr="243" indent="">
 			<var>$XS.Iterator4</var>
 			<text> </text>
 			<text>=</text>
@@ -2694,17 +2559,17 @@
 			<text> </text>
 			<var>$Log</var>
 		</line>
-		<line linenr="252" indent="">
+		<line linenr="244" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$XS.Iterator4</var>
 		</line>
-		<line linenr="253" indent="">
+		<line linenr="245" indent="">
 			<text>dec</text>
 			<text> </text>
 			<var>$XS.Iterator4</var>
 		</line>
-		<line linenr="254" indent="">
+		<line linenr="246" indent="">
 			<var>$entry</var>
 			<text> </text>
 			<text>=</text>
@@ -2714,7 +2579,7 @@
 			<var>$XS.Iterator4</var>
 			<text>]</text>
 		</line>
-		<line linenr="255" indent="">
+		<line linenr="247" indent="">
 			<text>add</text>
 			<text> </text>
 			<text>non</text>
@@ -2733,10 +2598,10 @@
 			<text>=</text>
 			<var>$entry</var>
 		</line>
-		<line linenr="256" indent="">
+		<line linenr="248" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="257" indent="">
+		<line linenr="249" indent="">
 			<text>endsub</text>
 		</line>
 	</sourcetext>
@@ -2745,7 +2610,7 @@
 			<sval type="string" val="Maydef.Menu.SM" />
 			<sval type="int" val="50" />
 			<sval type="string" val="" />
-			<sval type="int" val="102" />
+			<sval type="int" val="105" />
 			<sval type="int" val="0" />
 			<sval type="array" size="40">
 				<sval type="string" val="Menu" />
@@ -2759,7 +2624,7 @@
 				<sval type="string" val="Settings" />
 				<sval type="string" val="SettingsVersion" />
 				<sval type="string" val="currentSection" />
-				<sval type="string" val="DefDock" />
+				<sval type="string" val="StateKey" />
 				<sval type="string" val="mdState" />
 				<sval type="string" val="ControlType" />
 				<sval type="string" val="refresh" />
@@ -2789,7 +2654,7 @@
 				<sval type="string" val="entry" />
 				<sval type="string" val="XS.Iterator4" />
 			</sval>
-			<sval type="array" size="223">
+			<sval type="array" size="216">
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610612216" />
@@ -2826,43 +2691,24 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="1" />
 				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="129" />
-					<sval type="int" val="11" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
-					<sval type="int" val="4" />
-					<sval type="int" val="2" />
-				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="12" />
-					<sval type="int" val="1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610610424" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
 					<sval type="int" val="11" />
 					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="156" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
 					<sval type="int" val="5" />
 					<sval type="string" val="maydef_State" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
+				</sval>
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="11" />
 					<sval type="int" val="12" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610609917" />
+					<sval type="int" val="-1610610429" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="3" />
@@ -2871,7 +2717,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
-					<sval type="int" val="17" />
+					<sval type="int" val="15" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="101" />
@@ -2892,7 +2738,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="82" />
+					<sval type="int" val="78" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
@@ -2929,7 +2775,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610602237" />
+					<sval type="int" val="-1610602749" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="13" />
@@ -2952,7 +2798,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610606077" />
+					<sval type="int" val="-1610606589" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -2984,11 +2830,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610604539" />
+					<sval type="int" val="-1610605051" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3044,11 +2890,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610603259" />
+					<sval type="int" val="-1610603771" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3089,11 +2935,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610602235" />
+					<sval type="int" val="-1610602747" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3134,7 +2980,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610592765" />
+					<sval type="int" val="-1610593789" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="13" />
@@ -3157,12 +3003,12 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610599933" />
+					<sval type="int" val="-1610600957" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
 					<sval type="int" val="5" />
-					<sval type="string" val="PickDock" />
+					<sval type="string" val="Start" />
 					<sval type="int" val="15" />
 					<sval type="int" val="0" />
 					<sval type="int" val="3" />
@@ -3170,54 +3016,19 @@
 					<sval type="int" val="0" />
 					<sval type="int" val="-2" />
 				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="1329" />
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="Maydef.Monitor" />
+					<sval type="int" val="-2147483646" />
 					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="11" />
-					<sval type="int" val="24" />
 					<sval type="int" val="12" />
-					<sval type="int" val="5" />
-					<sval type="string" val="Select new defense dock" />
+					<sval type="int" val="0" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610600445" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="8">
-					<sval type="int" val="1922" />
-					<sval type="int" val="-536858620" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
-					<sval type="int" val="5" />
-					<sval type="string" val="Maydef.Monitor.Dock" />
+				<sval type="array" size="4">
+					<sval type="int" val="105" />
+					<sval type="int" val="-2147483647" />
 					<sval type="int" val="4" />
-					<sval type="int" val="304" />
-				</sval>
-				<sval type="array" size="18">
-					<sval type="int" val="1017" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
-					<sval type="string" val="Maydef.Monitor.Dock" />
-					<sval type="int" val="4" />
-					<sval type="int" val="304" />
-					<sval type="int" val="4" />
-					<sval type="int" val="10" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
+					<sval type="int" val="2000" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
@@ -3230,11 +3041,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610597371" />
+					<sval type="int" val="-1610598395" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3299,7 +3110,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610597880" />
+					<sval type="int" val="-1610598904" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="20" />
@@ -3332,11 +3143,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610595579" />
+					<sval type="int" val="-1610596603" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3393,11 +3204,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610593787" />
+					<sval type="int" val="-1610594811" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3455,11 +3266,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610592763" />
+					<sval type="int" val="-1610593787" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="15" />
@@ -3500,7 +3311,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610591997" />
+					<sval type="int" val="-1610593021" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="14" />
@@ -3509,11 +3320,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="117" />
+					<sval type="int" val="111" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="100" />
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="103" />
@@ -3524,30 +3335,10 @@
 					<sval type="int" val="101" />
 					<sval type="string" val="AddOptions" />
 				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="12" />
-					<sval type="int" val="1" />
-					<sval type="int" val="0" />
-					<sval type="int" val="0" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610590712" />
-					<sval type="int" val="1" />
+				<sval type="array" size="4">
+					<sval type="int" val="158" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="11" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="156" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
-					<sval type="int" val="5" />
-					<sval type="string" val="maydef_State" />
 					<sval type="int" val="12" />
 				</sval>
 				<sval type="array" size="4">
@@ -3605,10 +3396,10 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-536845564" />
+					<sval type="int" val="-536847100" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
+					<sval type="int" val="12" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -3617,7 +3408,7 @@
 					<sval type="int" val="26" />
 					<sval type="int" val="1" />
 					<sval type="int" val="5" />
-					<sval type="string" val="Set defense dock" />
+					<sval type="string" val="START" />
 					<sval type="int" val="1" />
 					<sval type="int" val="-1" />
 				</sval>
@@ -3634,7 +3425,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="5" />
-					<sval type="string" val="PickDock" />
+					<sval type="string" val="Start" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="130" />
@@ -3656,13 +3447,16 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="108" />
+					<sval type="int" val="102" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="1028" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
+				<sval type="array" size="7">
+					<sval type="int" val="104" />
 					<sval type="int" val="26" />
+					<sval type="int" val="1" />
+					<sval type="int" val="5" />
+					<sval type="string" val="Running" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-1" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="1709" />
@@ -3674,7 +3468,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610586360" />
+					<sval type="int" val="-1610587896" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="17" />
@@ -3741,7 +3535,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610584317" />
+					<sval type="int" val="-1610585853" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
@@ -3756,15 +3550,15 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="123" />
+					<sval type="int" val="116" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="116" />
+					<sval type="int" val="110" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610583547" />
+					<sval type="int" val="-1610585083" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
@@ -3779,15 +3573,15 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="168" />
+					<sval type="int" val="161" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="116" />
+					<sval type="int" val="110" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610583035" />
+					<sval type="int" val="-1610584571" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
@@ -3802,7 +3596,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1167" />
-					<sval type="int" val="213" />
+					<sval type="int" val="206" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -3828,15 +3622,6 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="10" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="130" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="8" />
-					<sval type="int" val="4" />
-					<sval type="int" val="2" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="11" />
 				</sval>
 				<sval type="array" size="5">
 					<sval type="int" val="157" />
@@ -3949,7 +3734,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610573815" />
+					<sval type="int" val="-1610575607" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="31" />
@@ -4065,7 +3850,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="136" />
+					<sval type="int" val="129" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="1709" />
@@ -4090,7 +3875,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610570999" />
+					<sval type="int" val="-1610572791" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="33" />
@@ -4144,7 +3929,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="155" />
+					<sval type="int" val="148" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="1522" />
@@ -4419,7 +4204,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610558455" />
+					<sval type="int" val="-1610560247" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="35" />
@@ -4545,7 +4330,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="196" />
+					<sval type="int" val="189" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -4577,7 +4362,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610555895" />
+					<sval type="int" val="-1610557687" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="39" />
@@ -4605,7 +4390,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="217" />
+					<sval type="int" val="210" />
 				</sval>
 				<sval type="array" size="1">
 					<sval type="int" val="1168" />
@@ -4645,9 +4430,13 @@
 					<sval type="string" val="First Run" />
 				</sval>
 			</sval>
-			<sval type="array" size="48">
+			<sval type="array" size="47">
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="5" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -4655,39 +4444,43 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="9" />
+					<sval type="int" val="7" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="string" val="if not $FirstRun" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="string" val="set global variable: name=$Key.Menu value=$Menu" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="string" val="return null" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
 					<sval type="int" val="1" />
 					<sval type="string" val="end" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="11" />
+					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -4695,78 +4488,74 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="14" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="15" />
+					<sval type="int" val="13" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="15" />
+					<sval type="int" val="13" />
 					<sval type="int" val="1" />
 					<sval type="string" val="set menu option: $Menu, page up/down keys for info=[FALSE]" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="17" />
+					<sval type="int" val="15" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="20" />
+					<sval type="int" val="18" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="20" />
+					<sval type="int" val="18" />
 					<sval type="int" val="1" />
 					<sval type="string" val="write to player logbook: printf: fmt='CB %s %s %s', $ControlType, $Control, $CallbackReturn, null, null" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="41" />
+					<sval type="int" val="39" />
 					<sval type="int" val="2" />
 				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="48" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="48" />
-					<sval type="int" val="4" />
-				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="70" />
+					<sval type="int" val="66" />
 					<sval type="int" val="1" />
 					<sval type="string" val="skip if find $sector in array: $ExtraSectors" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="78" />
+					<sval type="int" val="74" />
 					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="74" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="77" />
+					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="78" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="81" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="81" />
+					<sval type="int" val="80" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="82" />
+					<sval type="int" val="84" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -4774,75 +4563,67 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="90" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="92" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="99" />
+					<sval type="int" val="93" />
 					<sval type="int" val="5" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="108" />
+					<sval type="int" val="102" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="108" />
+					<sval type="int" val="102" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="110" />
+					<sval type="int" val="4" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="110" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="111" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="116" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="119" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="145" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="116" />
+					<sval type="int" val="145" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="117" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="123" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="126" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="152" />
+					<sval type="int" val="156" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="152" />
+					<sval type="int" val="161" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="163" />
+					<sval type="int" val="179" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="205" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="168" />
+					<sval type="int" val="206" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="186" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="212" />
-					<sval type="int" val="4" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="213" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="222" />
+					<sval type="int" val="215" />
 					<sval type="int" val="4" />
 				</sval>
 			</sval>
