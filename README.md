@@ -113,6 +113,12 @@ problem lies somewhere with distances between 15 and 40km. (Could it
 be ~32.8km? A number that popped into my head for no particular
 reason).
 
+### Why	is this	in git?	###
+
+I've heard people say that keeping MSCI	scripts	in git is pointless
+because	diffs are unreadable. [See
+here](https://github.com/x3art/x3t/tree/master/xscriptcat).
+
 ## ChangeLog ##
 
 ### v1.1 ###
